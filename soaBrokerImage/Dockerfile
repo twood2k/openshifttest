@@ -29,6 +29,8 @@ VOLUME ["/opt/brokers/soabroker/tmp"]
 #VOLUME ["/opt/brokers/soabroker/etc"]
 VOLUME ["/opt/brokers/soabroker/log"]
 
+HEALTHCHECK
+
 WORKDIR /opt/brokers/soabroker/bin
 
 CMD ["./artemis","run"]
